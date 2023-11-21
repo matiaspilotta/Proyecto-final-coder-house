@@ -1,12 +1,10 @@
 from django.urls import path
-from django.http import HttpResponse
+from AppCoder.views import view_cuentas, view_inicio
 
 
-
-def view_inicio(request):
-    return HttpResponse("Bienvenidos")
 
 
 urlpatterns = [
     path('home/', view_inicio),
+    path('cuentas/', view_cuentas),
 ]
