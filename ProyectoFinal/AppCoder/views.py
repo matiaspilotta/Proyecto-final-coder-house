@@ -14,4 +14,3 @@ def view_cuentas(request):
 
 
 
-
