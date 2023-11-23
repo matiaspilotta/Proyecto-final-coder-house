@@ -23,11 +23,11 @@ def view_task(xx):
          'nacionalidad': 'argentino'
      }  # Para enviar al contexto
 
-#    ruta = "C:\Users\pkcle\OneDrive\Escritorio\Proyecto-final-coder-house\ProyectoFinal\AppCoder\templates\AppCoder\padre.html"
-     ruta = "\C:\Users\pkcle\OneDrive\Escritorio\Proyecto-final-coder-house\ProyectoFinal2\AppCoder\Templates\AppCoder\padre.html"
+     #ruta = "C:/Users/pkcle/OneDrive/Escritorio/Proyecto-final-coder-house/ProyectoFinal2/AppCoder/Templates/AppCoder/index.html"
+     ruta = "C:/Users/pkcle/OneDrive/Escritorio/Proyecto-final-coder-house/ProyectoFinal2/AppCoder/Templates/AppCoder/padre.html"
      mi_archivo = open(ruta, "r")
 
-     # "Método django - versión 1"
+     "Método django - versión 1"
      plantilla = Template(mi_archivo.read())  # Se carga en memoria nuestro documento, template1
      contexto = Context(diccionario)  # Le doy al contexto mi nombre y apellido
      documento = plantilla.render(contexto)  # Aqui renderizamos la plantilla en documento
